@@ -1,0 +1,43 @@
+/* ============================================================
+   ASCII Layout Sketcher — Global Styles
+   Colors: RGB blue text, burnt sienna borders, white bg
+   Font:   Roboto Mono (monospace throughout)
+   ============================================================ */
+
+:root {
+  --blue:    rgb(0, 0, 255);
+  --sienna:  rgb(160, 82, 45);
+  --bg:      #ffffff;
+  --bg-dim:  #fafafa;
+  --muted:   #888;
+  --grid-px: 12px;           /* canvas grid cell size in pixels */
+  --font:    'Roboto Mono', monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #app {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--font);
+  font-size: 13px;
+  background: var(--bg);
+  color: var(--blue);
+}
+
+button {
+  font-family: var(--font);
+  cursor: pointer;
+}
+
+input, textarea {
+  font-family: var(--font);
+}
